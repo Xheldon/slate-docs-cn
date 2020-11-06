@@ -65,10 +65,10 @@ const renderLeaf = useCallback(({ attributes, children, leaf }) => {
   return (
     <span
       {...attributes}
-      style={{
+      style={ {
         fontWeight: leaf.bold ? 'bold' : 'normal',
         fontStyle: leaf.italic ? 'italic' : 'normal',
-      }}
+      } }
     >
       {children}
     </span>

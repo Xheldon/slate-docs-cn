@@ -1,0 +1,15 @@
+[aria-label="Share"] {
+    display: none!important;
+}
+
+.book-summary ul.summary li {
+    padding-left: 15px;
+}
+
+.book-summary ul.summary li.header {
+    font-size: 16px;
+}
+
+.book-summary ul.summary li:last-child {
+    display: none;
+}

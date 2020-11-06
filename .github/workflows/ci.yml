@@ -1,0 +1,45 @@
+name: Slate-Docs-CN
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      
+      - name: Install Node
+        uses: actions/setup-node@v1
+
+      - name: Install gitbook-cli
+        run: npm install gitbook-cli -g
+
+      - name: Install gitbook
+        run: gitbook fetch 3.2.3
+
+      - name: Install gitbook
+        run: gitbook install
+
+      - name: Build Book
+        run: gitbook build --gitbook=3.2.3
+
+      - name: Add CNAME
+        working-directory: ./_book
+        run: echo "slate.xheldon.com" > CNAME
+
+      - name: Push
+        working-directory: ./_book
+        run: |
+          git init
+          git checkout -b gh
+          git add -A
+          git -c user.name='github actions by ${{github.actor}}' -c user.email='NO' commit -m 'update docs' 
+          git push "https://${{github.actor}}:${{secrets.GITHUB_TOKEN}}@github.com/${{github.repository}}.git" HEAD:gh -f -q
+
+

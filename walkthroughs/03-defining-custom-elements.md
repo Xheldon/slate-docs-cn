@@ -118,7 +118,7 @@ const DefaultElement = props => {
 
 ```jsx
 // 从 Slate 导入 `Editor`
-import { Editor } from 'slate'
+import { Editor, Transforms } from 'slate'
 
 const App = () => {
   const editor = useMemo(() => withReact(createEditor()), [])

@@ -1,0 +1,32 @@
+{
+    "author": "Xheldon",
+    "generator": "site",
+    "output": "docs",
+    "language": "zh-hans",
+    "title": "Slate 中文文档",
+    "plugins": ["ga", "-search", "-lunr"],
+    "gitbook": "3.2.3",
+    "links": {
+        "sidebar": {
+            "关于我": "https://github.com/Xheldon"
+        }
+    },
+    "pluginsConfig": {
+        "sharing": {
+            "facebook": false,
+            "twitter": true,
+            "google": false,
+            "weibo": true,
+            "instapaper": false,
+            "vk": false
+        },
+        "ga": {
+            "token": "UA-79359216-3"
+        }
+    },
+    "headerTemplate": "__AUTHOR__",
+    "footerTemplate": "_TITLE_",
+    "styles": {
+        "website": "styles/website.css"
+    }
+}
