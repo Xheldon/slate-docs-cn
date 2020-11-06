@@ -8,7 +8,8 @@
     "gitbook": "3.2.3",
     "links": {
         "sidebar": {
-            "关于我": "https://github.com/Xheldon"
+            "关于我": "https://github.com/Xheldon",
+            "项目地址": "https://github.com/Xheldon/slate-docs-cn/tree/master"
         }
     },
     "pluginsConfig": {
