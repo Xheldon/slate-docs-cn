@@ -4,6 +4,7 @@ on:
   push:
     branches: [ master ]
 
+# todo: 当 commit msg 中存在某些字符的时候不触发 actions
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -23,7 +24,7 @@ jobs:
       - name: Install gitbook
         run: gitbook fetch 3.2.3
 
-      - name: Install gitbook
+      - name: Install gitbook dependency
         run: gitbook install
 
       - name: Build Book
