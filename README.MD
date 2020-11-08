@@ -1,6 +1,6 @@
 ## 前言
 
-本文档基于 slate `v0.57.1` 版本构建，fork 自译者 [loveloki](https://github.com/loveloki) 的 [slate-docs-cn 仓库](https://github.com/loveloki/slate-docs-cn) ，而后加上 [本人](https://github.com/Xheldon) 的修正补充而来，文档的仓库地址在 [这里](https://github.com/Xheldon/slate-docs-cn)，CI 基于 Github Actions，使用 Github Pages 发布到 [https//slate.xheldon.com](https//slate.xheldon.com) 域名下。
+本文档基于 slate `v0.57.1` 版本构建，fork 自译者 [loveloki](https://github.com/loveloki) 的 [slate-docs-cn 仓库](https://github.com/loveloki/slate-docs-cn) ，而后加上 [本人](https://github.com/Xheldon) 的修正补充而来，文档的仓库地址在 [这里](https://github.com/Xheldon/slate-docs-cn)，CI 基于 Github Actions，使用 Github Pages 发布到 [https//slate.xheldon.com](https://slate.xheldon.com) 域名下。
 
 原始英文文档 [在这里](https://github.com/ianstormtaylor/slate/tree/master/docs)
 
