@@ -75,7 +75,7 @@ import { Range } from 'slate'
 // 按顺序获取一个 range 的开头和结尾
 const [start, end] = Range.edges(range)
 
-// 检查一个 range 是否是一个单点（气质位置和终止位置是同一点）
+// 检查一个 range 是否是一个单点（起始位置和终止位置是同一点）
 if (Range.isCollapsed(range)) {
   // ...
 }

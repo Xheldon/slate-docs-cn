@@ -80,8 +80,8 @@ Slate 尝试通过一些原则去解决 "[Why?](about:blank#why)" 这一节提�
 
 如果你是第一次使用 Slate，可以查看 [Getting Started](./walkthroughs/01-installing-slate) 实战演练和 [Concepts](./concepts) 去熟悉 Slate 的架构和思维模型。
 
-- [**Walkthroughs**](./walkthroughs)：实战演练
-- [**Concepts**](./concepts)：概念
+- [**Walkthroughs**](./walkthroughs/01-installing-slate.html)：实战演练
+- [**Concepts**](./concepts/01-interfaces.html)：概念
 - [**FAQ**](./general/faq)：常见问题
 - [**Resources**](./general/resources)：资源
 

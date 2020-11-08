@@ -60,7 +60,7 @@ editor.isInline = element => {
 const { insertText } = editor
 
 editor.insertText = text => {
-  if (isUrl(text) {
+  if (isUrl(text)) {
     // ...
     return
   }
