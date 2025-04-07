@@ -31,7 +31,7 @@ jobs:
         run: gitbook build --gitbook=3.2.3
 
       - name: Push
-        working-directory: .
+        working-directory: ./_book
         run: |
           git checkout -b temp
           git add -A
