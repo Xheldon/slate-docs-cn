@@ -36,6 +36,6 @@ jobs:
           git checkout -b temp
           git add -A
           git -c user.name='github actions by ${{github.actor}}' -c user.email='NO' commit -m 'update docs' 
-          git push -f "https://${{github.actor}}:${{secrets.GITHUB_TOKEN}}@github.com/${{github.repository}}.git" temp:master
+          git push -f "https://${{github.actor}}:${{secrets.GITHUB_TOKEN}}@github.com/${{github.repository}}.git" temp:gh
 
 
