@@ -5,7 +5,7 @@
     "language": "zh-hans",
     "title": "Slate 中文",
     "plugins": [
-        "google-analytics",
+        "ga",
         "-search",
         "-lunr"
     ],
