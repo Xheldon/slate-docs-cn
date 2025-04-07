@@ -4,7 +4,11 @@
     "output": "docs",
     "language": "zh-hans",
     "title": "Slate 中文",
-    "plugins": ["ga", "-search", "-lunr"],
+    "plugins": [
+        "google-analytics",
+        "-search",
+        "-lunr"
+    ],
     "gitbook": "3.2.3",
     "links": {
         "sidebar": {
