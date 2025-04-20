@@ -1,0 +1,649 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>保存到数据库 · Slate 中文</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Xheldon">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="XX-using-the-bundled-source.html" />
+    
+    
+    <link rel="prev" href="05-executing-commands.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://github.com/Xheldon" target="_blank" class="custom-link">关于我</a>
+        </li>
+    
+        
+        <li>
+            <a href="https://github.com/Xheldon/slate-docs-cn/tree/master" target="_blank" class="custom-link">项目地址</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    致谢
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Introduction.html">
+            
+                <a href="../Introduction.html">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">实战</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="01-installing-slate.html">
+            
+                <a href="01-installing-slate.html">
+            
+                    
+                    安装 Slate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="02-adding-event-handlers.html">
+            
+                <a href="02-adding-event-handlers.html">
+            
+                    
+                    添加事件处理器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="03-defining-custom-elements.html">
+            
+                <a href="03-defining-custom-elements.html">
+            
+                    
+                    自定义节点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="04-applying-custom-formatting.html">
+            
+                <a href="04-applying-custom-formatting.html">
+            
+                    
+                    自定义样式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="05-executing-commands.html">
+            
+                <a href="05-executing-commands.html">
+            
+                    
+                    执行命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.6" data-path="06-saving-to-a-database.html">
+            
+                <a href="06-saving-to-a-database.html">
+            
+                    
+                    保存到数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="XX-using-the-bundled-source.html">
+            
+                <a href="XX-using-the-bundled-source.html">
+            
+                    
+                    使用打包后的版本
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">核心概念</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../concepts/01-interfaces.html">
+            
+                <a href="../concepts/01-interfaces.html">
+            
+                    
+                    接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../concepts/02-nodes.html">
+            
+                <a href="../concepts/02-nodes.html">
+            
+                    
+                    节点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../concepts/03-locations.html">
+            
+                <a href="../concepts/03-locations.html">
+            
+                    
+                    位置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../concepts/04-commands.html">
+            
+                <a href="../concepts/04-commands.html">
+            
+                    
+                    命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../concepts/05-operations.html">
+            
+                <a href="../concepts/05-operations.html">
+            
+                    
+                    操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="../concepts/06-editor.html">
+            
+                <a href="../concepts/06-editor.html">
+            
+                    
+                    编辑器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="../concepts/07-plugins.html">
+            
+                <a href="../concepts/07-plugins.html">
+            
+                    
+                    插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="../concepts/08-rendering.html">
+            
+                <a href="../concepts/08-rendering.html">
+            
+                    
+                    渲染
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="../concepts/09-serializing.html">
+            
+                <a href="../concepts/09-serializing.html">
+            
+                    
+                    序列化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10" data-path="../concepts/10-normalizing.html">
+            
+                <a href="../concepts/10-normalizing.html">
+            
+                    
+                    规范化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11" data-path="../concepts/XX-migrating.html">
+            
+                <a href="../concepts/XX-migrating.html">
+            
+                    
+                    迁移
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">通用</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../general/resources.html">
+            
+                <a href="../general/resources.html">
+            
+                    
+                    资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" >
+            
+                <a target="_blank" href="https://github.com/ianstormtaylor/slate/blob/master/Contributing.md">
+            
+                    
+                    贡献
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" >
+            
+                <a target="_blank" href="https://github.com/ianstormtaylor/slate/blob/master/Changelog.md">
+            
+                    
+                    更新日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../general/faq.html">
+            
+                <a href="../general/faq.html">
+            
+                    
+                    常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >保存到数据库</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x4FDD;&#x5B58;&#x5230;&#x6570;&#x636E;&#x5E93;">&#x4FDD;&#x5B58;&#x5230;&#x6570;&#x636E;&#x5E93;</h1>
+<p>&#x73B0;&#x5728;&#x4F60;&#x5DF2;&#x7ECF;&#x5B66;&#x4F1A;&#x4E86;&#x5982;&#x4F55;&#x5411; Slate &#x7F16;&#x8F91;&#x5668;&#x6DFB;&#x52A0;&#x529F;&#x80FD;&#x7684;&#x57FA;&#x672C;&#x77E5;&#x8BC6;&#xFF0C;&#x4F60;&#x53EF;&#x80FD;&#x60F3;&#x8981;&#x77E5;&#x9053;&#x5982;&#x4F55;&#x4FDD;&#x5B58;&#x4F60;&#x5DF2;&#x7ECF;&#x7F16;&#x8F91;&#x8FC7;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x8FD9;&#x6837;&#x4F60;&#x5C31;&#x53EF;&#x4EE5;&#x5728;&#x4E4B;&#x540E;&#x8FD4;&#x56DE;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x5E76;&#x4E14;&#x52A0;&#x8F7D;&#x5B83;&#x3002;</p>
+<p>&#x5728;&#x8FD9;&#x7BC7;&#x6307;&#x5357;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x4F1A;&#x50CF;&#x4F60;&#x5C55;&#x793A;&#x5982;&#x4F55;&#x6DFB;&#x52A0;&#x903B;&#x8F91;&#xFF0C;&#x4EE5;&#x4FBF;&#x5C06;&#x4F60;&#x5728; Slate &#x4E2D;&#x7F16;&#x8F91;&#x7684;&#x5185;&#x5BB9;&#x4FDD;&#x5B58;&#x5230;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x5E76;&#x5728;&#x968F;&#x540E;&#x8BFB;&#x53D6;&#x5B83;&#x3002;</p>
+<p>&#x8BA9;&#x6211;&#x4EEC;&#x4ECE;&#x4E00;&#x4E2A;&#x57FA;&#x672C;&#x7684;&#x7F16;&#x8F91;&#x5668;&#x5F00;&#x59CB;&#xFF1A;</p>
+<pre><code class="lang-jsx"><span class="hljs-keyword">const</span> App = () =&gt; {
+  <span class="hljs-keyword">const</span> editor = useMemo(() =&gt; withReact(createEditor()), [])
+  <span class="hljs-keyword">const</span> [value, setValue] = useState([
+    {
+      type: <span class="hljs-string">&apos;paragraph&apos;</span>,
+      children: [{ text: <span class="hljs-string">&apos;&#x6BB5;&#x843D;&#x4E2D;&#x7684;&#x4E00;&#x6BB5;&#x6587;&#x672C;&#x3002;&apos;</span> }],
+    },
+  ])
+
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Slate</span> <span class="hljs-attr">editor</span>=<span class="hljs-string">{editor}</span> <span class="hljs-attr">value</span>=<span class="hljs-string">{value}</span> <span class="hljs-attr">onChange</span>=<span class="hljs-string">{value</span> =&gt;</span> setValue(value)}&gt;
+      <span class="hljs-tag">&lt;<span class="hljs-name">Editable</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">Slate</span>&gt;</span>
+  )
+}
+</span></code></pre>
+<p>&#x5B83;&#x5C06;&#x4F1A;&#x6E32;&#x67D3;&#x4E00;&#x4E2A;&#x57FA;&#x672C;&#x7684; Slate &#x7F16;&#x8F91;&#x5668;&#x5728;&#x9875;&#x9762;&#x4E0A;&#xFF0C;&#x968F;&#x7740;&#x4F60;&#x8F93;&#x5165;&#x5185;&#x5BB9;&#x4F1A;&#x53D1;&#x751F;&#x53D8;&#x5316;&#x3002;&#x4F46;&#x662F;&#x5982;&#x679C;&#x4F60;&#x5237;&#x65B0;&#x9875;&#x9762;&#xFF0C;&#x6240;&#x6709;&#x5185;&#x5BB9;&#x90FD;&#x5C06;&#x56DE;&#x5230;&#x4E00;&#x5F00;&#x59CB;&#x7684;&#x65F6;&#x5019; -- &#x4EC0;&#x4E48;&#x90FD;&#x6CA1;&#x6709;&#x88AB;&#x4FDD;&#x5B58;&#xFF01;</p>
+<p>&#x6211;&#x4EEC;&#x9700;&#x8981;&#x505A;&#x7684;&#x662F;&#x4FDD;&#x5B58;&#x4F60;&#x5728;&#x67D0;&#x4E2A;&#x5730;&#x65B9;&#x505A;&#x7684;&#x6539;&#x53D8;&#x3002;&#x5BF9;&#x4E8E;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x6765;&#x8BF4;&#xFF0C;&#x867D;&#x7136;&#x6211;&#x4EEC;&#x4EC5;&#x4EC5;&#x4F7F;&#x7528;&#x4E86; <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage" target="_blank">Local Storage</a> &#xFF0C;&#x4F46;&#x662F;&#x8FD9;&#x4F1A;&#x7ED9;&#x4F60;&#x600E;&#x4E48;&#x4FDD;&#x5B58;&#x6570;&#x636E;&#x5E26;&#x6765;&#x7075;&#x611F;&#x3002;</p>
+<p>&#x6240;&#x4EE5;&#xFF0C;&#x5728;&#x6211;&#x4EEC;&#x7684; <code>onChange</code> &#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x51FD;&#x6570;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x4FDD;&#x5B58; <code>value</code> &#xFF1A;</p>
+<pre><code class="lang-jsx"><span class="hljs-keyword">const</span> App = () =&gt; {
+  <span class="hljs-keyword">const</span> editor = useMemo(() =&gt; withReact(createEditor()), [])
+  <span class="hljs-keyword">const</span> [value, setValue] = useState([
+    {
+      type: <span class="hljs-string">&apos;paragraph&apos;</span>,
+      children: [{ text: <span class="hljs-string">&apos;&#x6BB5;&#x843D;&#x4E2D;&#x7684;&#x4E00;&#x6BB5;&#x6587;&#x672C;&#x3002;&apos;</span> }],
+    },
+  ])
+
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Slate</span>
+      <span class="hljs-attr">editor</span>=<span class="hljs-string">{editor}</span>
+      <span class="hljs-attr">value</span>=<span class="hljs-string">{value}</span>
+      <span class="hljs-attr">selection</span>=<span class="hljs-string">{selection}</span>
+      <span class="hljs-attr">onChange</span>=<span class="hljs-string">{value</span> =&gt;</span> {
+        setValue(value)
+
+        // &#x5728; Local Storage &#x91CC;&#x4FDD;&#x5B58;&#x503C;&#x3002;
+        const content = JSON.stringify(value)
+        localStorage.setItem(&apos;content&apos;, content)
+      }}
+    &gt;
+      <span class="hljs-tag">&lt;<span class="hljs-name">Editable</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">Slate</span>&gt;</span>
+  )
+}
+</span></code></pre>
+<p>&#x73B0;&#x5728;&#x65E0;&#x8BBA;&#x4F55;&#x65F6;&#x4F60;&#x7F16;&#x8F91;&#x9875;&#x9762;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x67E5;&#x770B; Local Storage&#xFF0C;&#x4F60;&#x5E94;&#x8BE5;&#x4F1A;&#x770B;&#x5230; <code>content</code> &#x7684;&#x503C;&#x5DF2;&#x7ECF;&#x88AB;&#x6539;&#x53D8;&#x3002;</p>
+<p>&#x4F46;&#x662F;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x5237;&#x65B0;&#x9875;&#x9762;&#xFF0C;&#x8FD8;&#x662F;&#x548C;&#x4E4B;&#x524D;&#x4E00;&#x6837;&#xFF0C;&#x4EC0;&#x4E48;&#x90FD;&#x4E0D;&#x5B58;&#x5728;&#x4E86;&#x3002;&#x8FD9;&#x662F;&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x786E;&#x4FDD;&#x521D;&#x59CB;&#x503C;&#x662F;&#x4ECE;&#x540C;&#x4E00;&#x4E2A; Local Storage &#x8BFB;&#x53D6;&#x7684;&#x3002;&#x5C31;&#x50CF;&#x8FD9;&#x6837;&#xFF1A;</p>
+<pre><code class="lang-jsx"><span class="hljs-keyword">const</span> App = () =&gt; {
+  <span class="hljs-keyword">const</span> editor = useMemo(() =&gt; withReact(createEditor()), [])
+  <span class="hljs-comment">// &#x5982;&#x679C; Local Storage &#x5B58;&#x5728;&#x503C;&#xFF0C;&#x7528;&#x5B83;&#x6765;&#x66F4;&#x65B0;&#x521D;&#x59CB;&#x503C;&#x3002;</span>
+  <span class="hljs-keyword">const</span> [value, setValue] = useState(
+    <span class="hljs-built_in">JSON</span>.parse(localStorage.getItem(<span class="hljs-string">&apos;content&apos;</span>)) || [
+      {
+        type: <span class="hljs-string">&apos;paragraph&apos;</span>,
+        children: [{ text: <span class="hljs-string">&apos;&#x6BB5;&#x843D;&#x4E2D;&#x7684;&#x4E00;&#x6BB5;&#x6587;&#x672C;&#x3002;&apos;</span> }],
+      },
+    ]
+  )
+
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Slate</span>
+      <span class="hljs-attr">editor</span>=<span class="hljs-string">{editor}</span>
+      <span class="hljs-attr">value</span>=<span class="hljs-string">{value}</span>
+      <span class="hljs-attr">onChange</span>=<span class="hljs-string">{value</span> =&gt;</span> {
+        setValue(value)
+        const content = JSON.stringify(value)
+        localStorage.setItem(&apos;content&apos;, content)
+      }}
+    &gt;
+      <span class="hljs-tag">&lt;<span class="hljs-name">Editable</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">Slate</span>&gt;</span>
+  )
+}
+</span></code></pre>
+<p>&#x73B0;&#x5728;&#x4F60;&#x5E94;&#x8BE5;&#x80FD;&#x591F;&#x4FDD;&#x5B58;&#x5237;&#x65B0;&#x4E4B;&#x95F4;&#x7684;&#x53D8;&#x5316;&#x4E86;&#xFF01;</p>
+<p>&#x6210;&#x529F;&#x4E86; &#x2014; &#x4F60;&#x5DF2;&#x7ECF;&#x6709;&#x4E00;&#x4E2A; JSON &#x5BF9;&#x8C61;&#x5728;&#x4F60;&#x7684;&#x6570;&#x636E;&#x5E93;&#x4E86;&#x3002;</p>
+<p>&#x4F46;&#x662F;&#x5982;&#x679C;&#x4F60;&#x60F3;&#x8981;&#x4FDD;&#x5B58;&#x7684;&#x6570;&#x636E;&#x683C;&#x5F0F;&#x4E0D;&#x662F; JSON &#x5462;&#xFF1F; &#x6CA1;&#x95EE;&#x9898;&#xFF0C;&#x53EA;&#x8981;&#x4F60;&#x7528;&#x4E0D;&#x540C;&#x7684;&#x65B9;&#x5F0F;&#x53BB;&#x5E8F;&#x5217;&#x5316;&#x4F60;&#x7684;&#x503C;&#x5C31;&#x597D;&#x4E86;&#x3002;&#x6BD4;&#x5982;&#x8BF4;&#x4F60;&#x60F3;&#x8981;&#x4FDD;&#x5B58;&#x7EAF;&#x6587;&#x672C;&#x800C;&#x4E0D;&#x662F; JSON&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x7F16;&#x5199;&#x4E00;&#x4E9B;&#x903B;&#x8F91;&#x6765;&#x5E8F;&#x5217;&#x5316;&#x548C;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x7EAF;&#x6587;&#x672C;&#x7684;&#x503C;&#x3002;</p>
+<pre><code class="lang-jsx"><span class="hljs-comment">// &#x4ECE; Slate &#x5BFC;&#x5165; `Node` &#x5E2E;&#x52A9;&#x51FD;&#x6570;&#x63A5;&#x53E3;&#x3002;</span>
+<span class="hljs-keyword">import</span> { Node } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;slate&apos;</span>
+
+<span class="hljs-comment">// &#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x4E3A; `value` &#x8FD4;&#x56DE;&#x503C;&#x662F;&#x7EAF;&#x6587;&#x672C;&#x7684;&#x5E8F;&#x5217;&#x5316;&#x51FD;&#x6570;&#x3002;</span>
+<span class="hljs-keyword">const</span> serialize = value =&gt; {
+  <span class="hljs-keyword">return</span> (
+    value
+      <span class="hljs-comment">// &#x8FD4;&#x56DE;&#x8FD9;&#x4E2A; value &#x4E2D;&#x6BCF;&#x4E00;&#x4E2A;&#x6BB5;&#x843D;&#x4E2D;&#x7684;&#x5B50;&#x8282;&#x70B9;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x5185;&#x5BB9;&#x3002;</span>
+      .map(n =&gt; Node.string(n))
+      <span class="hljs-comment">// &#x7528;&#x6362;&#x884C;&#x7B26;&#xFF08;&#x7528;&#x6362;&#x884C;&#x7B26;&#x6765;&#x533A;&#x5206;&#x6BB5;&#x843D;&#xFF09;&#x6765;&#x8FDE;&#x63A5;&#x4ED6;&#x4EEC;&#x3002;</span>
+      .join(<span class="hljs-string">&apos;\n&apos;</span>)
+  )
+}
+
+<span class="hljs-comment">// &#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#x8FD4;&#x56DE;&#x503C;&#x662F; `value` &#x7684;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x51FD;&#x6570;</span>
+<span class="hljs-keyword">const</span> deserialize = string =&gt; {
+  <span class="hljs-comment">// &#x5206;&#x9694;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5305;&#x542B;value&#x7684;child&#x6570;&#x7EC4;&#x3002;</span>
+  <span class="hljs-keyword">return</span> string.split(<span class="hljs-string">&apos;\n&apos;</span>).map(line =&gt; {
+    <span class="hljs-keyword">return</span> {
+      children: [{ text: line }],
+    }
+  })
+}
+
+<span class="hljs-keyword">const</span> App = () =&gt; {
+  <span class="hljs-keyword">const</span> editor = useMemo(() =&gt; withReact(createEditor()), [])
+  <span class="hljs-comment">// &#x4F7F;&#x7528;&#x6211;&#x4EEC;&#x7684;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x51FD;&#x6570;&#x6765;&#x4ECE; Local Storage &#x4E2D;&#x8BFB;&#x53D6;&#x6570;&#x636E;&#x3002;</span>
+  <span class="hljs-keyword">const</span> [value, setValue] = useState(
+    deserialize(localStorage.getItem(<span class="hljs-string">&apos;content&apos;</span>)) || <span class="hljs-string">&apos;&apos;</span>
+  )
+
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Slate</span>
+      <span class="hljs-attr">editor</span>=<span class="hljs-string">{editor}</span>
+      <span class="hljs-attr">value</span>=<span class="hljs-string">{value}</span>
+      <span class="hljs-attr">onChange</span>=<span class="hljs-string">{value</span> =&gt;</span> {
+        setValue(value)
+        // &#x5E8F;&#x5217;&#x5316; `value` &#x5E76;&#x5C06;&#x4EA7;&#x751F;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x4FDD;&#x5B58;&#x5230; Local Storage&#x3002;
+        localStorage.setItem(&apos;content&apos;, serialize(value))
+      }}
+    &gt;
+      <span class="hljs-tag">&lt;<span class="hljs-name">Editable</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">Slate</span>&gt;</span>
+  )
+}
+</span></code></pre>
+<p>&#x5B83;&#x4E5F;&#x6B63;&#x5E38;&#x5DE5;&#x4F5C;&#x4E86;&#xFF01;&#x73B0;&#x5728;&#x4F60;&#x4FDD;&#x5B58;&#x7684;&#x662F;&#x7EAF;&#x6587;&#x672C;&#x3002;</p>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x5C06;&#x4F60;&#x6240;&#x559C;&#x6B22;&#x7684;&#x683C;&#x5F0F;&#x4EFF;&#x7167;&#x8FD9;&#x4E2A;&#x7B56;&#x7565;&#x53BB;&#x4FDD;&#x5B58;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x5E8F;&#x5217;&#x5316;&#x4E3A;&#x4E3A; HTML&#xFF0C;Markdown&#xFF0C;&#x751A;&#x81F3;&#x662F;&#x6839;&#x636E;&#x4F60;&#x7684;&#x5B9E;&#x9645;&#x60C5;&#x51B5;&#x5B9A;&#x5236;&#x7684; JSON &#x683C;&#x5F0F;&#x3002;</p>
+<blockquote>
+<p>&#x1F916; &#x8BF7;&#x6CE8;&#x610F;&#xFF0C;&#x867D;&#x7136;&#x4F60;&#x53EF;&#x4EE5;&#x7528;&#x4EFB;&#x4F55;&#x559C;&#x6B22;&#x7684;&#x65B9;&#x5F0F;&#x53BB;&#x5E8F;&#x5217;&#x5316;&#x503C;&#xFF0C;&#x4F46;&#x662F;&#x4ED6;&#x4EEC;&#x9700;&#x8981;&#x88AB;&#x6743;&#x8861;&#x3002;&#x5E8F;&#x5217;&#x5316;&#x8FC7;&#x7A0B;&#x672C;&#x8EAB;&#x662F;&#x6709;&#x6210;&#x672C;&#x7684;&#xFF0C;&#x6709;&#x4E9B;&#x683C;&#x5F0F;&#x53EF;&#x80FD;&#x6BD4;&#x5176;&#x4ED6;&#x683C;&#x5F0F;&#x66F4;&#x52A0;&#x96BE;&#x4EE5;&#x4F7F;&#x7528;&#x3002;&#x901A;&#x5E38;&#x6765;&#x8BF4;&#xFF0C;&#x6211;&#x4EEC;&#x5EFA;&#x8BAE;&#x4EC5;&#x5F53;&#x5728;&#x4F60;&#x6709;&#x7279;&#x6B8A;&#x7528;&#x9014;&#x7684;&#x65F6;&#x5019;&#x624D;&#x7F16;&#x5199;&#x81EA;&#x5DF1;&#x7684;&#x683C;&#x5F0F;&#x3002;&#x53E6;&#x5916;&#xFF0C;&#x901A;&#x5E38;&#x4F7F;&#x7528; Slate &#x9ED8;&#x8BA4;&#x7684;&#x683C;&#x5F0F;&#x662F;&#x6700;&#x597D;&#x7684;&#x3002;</p>
+</blockquote>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="05-executing-commands.html" class="navigation navigation-prev " aria-label="Previous page: 执行命令">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="XX-using-the-bundled-source.html" class="navigation navigation-next " aria-label="Next page: 使用打包后的版本">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"保存到数据库","level":"2.6","depth":1,"next":{"title":"使用打包后的版本","level":"2.7","depth":1,"path":"walkthroughs/XX-using-the-bundled-source.md","ref":"./walkthroughs/XX-using-the-bundled-source.md","articles":[]},"previous":{"title":"执行命令","level":"2.5","depth":1,"path":"walkthroughs/05-executing-commands.md","ref":"./walkthroughs/05-executing-commands.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","-search","-lunr"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":true,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"ga":{"configuration":"auto","token":"G-EWFCPBLMDL"},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"showLevel":false}},"headerTemplate":"__AUTHOR__","theme":"default","author":"Xheldon","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"footerTemplate":"_TITLE_","variables":{},"title":"Slate 中文","language":"zh-hans","links":{"sidebar":{"关于我":"https://github.com/Xheldon","项目地址":"https://github.com/Xheldon/slate-docs-cn/tree/master"}},"gitbook":"3.2.3"},"file":{"path":"walkthroughs/06-saving-to-a-database.md","mtime":"2025-04-20T06:35:34.144Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-04-20T06:36:05.914Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

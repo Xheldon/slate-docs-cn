@@ -1,0 +1,604 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>编辑器 · Slate 中文</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Xheldon">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="07-plugins.html" />
+    
+    
+    <link rel="prev" href="05-operations.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://github.com/Xheldon" target="_blank" class="custom-link">关于我</a>
+        </li>
+    
+        
+        <li>
+            <a href="https://github.com/Xheldon/slate-docs-cn/tree/master" target="_blank" class="custom-link">项目地址</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    致谢
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Introduction.html">
+            
+                <a href="../Introduction.html">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">实战</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../walkthroughs/01-installing-slate.html">
+            
+                <a href="../walkthroughs/01-installing-slate.html">
+            
+                    
+                    安装 Slate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../walkthroughs/02-adding-event-handlers.html">
+            
+                <a href="../walkthroughs/02-adding-event-handlers.html">
+            
+                    
+                    添加事件处理器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../walkthroughs/03-defining-custom-elements.html">
+            
+                <a href="../walkthroughs/03-defining-custom-elements.html">
+            
+                    
+                    自定义节点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../walkthroughs/04-applying-custom-formatting.html">
+            
+                <a href="../walkthroughs/04-applying-custom-formatting.html">
+            
+                    
+                    自定义样式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../walkthroughs/05-executing-commands.html">
+            
+                <a href="../walkthroughs/05-executing-commands.html">
+            
+                    
+                    执行命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../walkthroughs/06-saving-to-a-database.html">
+            
+                <a href="../walkthroughs/06-saving-to-a-database.html">
+            
+                    
+                    保存到数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../walkthroughs/XX-using-the-bundled-source.html">
+            
+                <a href="../walkthroughs/XX-using-the-bundled-source.html">
+            
+                    
+                    使用打包后的版本
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">核心概念</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="01-interfaces.html">
+            
+                <a href="01-interfaces.html">
+            
+                    
+                    接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="02-nodes.html">
+            
+                <a href="02-nodes.html">
+            
+                    
+                    节点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="03-locations.html">
+            
+                <a href="03-locations.html">
+            
+                    
+                    位置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="04-commands.html">
+            
+                <a href="04-commands.html">
+            
+                    
+                    命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="05-operations.html">
+            
+                <a href="05-operations.html">
+            
+                    
+                    操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.6" data-path="06-editor.html">
+            
+                <a href="06-editor.html">
+            
+                    
+                    编辑器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="07-plugins.html">
+            
+                <a href="07-plugins.html">
+            
+                    
+                    插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="08-rendering.html">
+            
+                <a href="08-rendering.html">
+            
+                    
+                    渲染
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="09-serializing.html">
+            
+                <a href="09-serializing.html">
+            
+                    
+                    序列化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10" data-path="10-normalizing.html">
+            
+                <a href="10-normalizing.html">
+            
+                    
+                    规范化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11" data-path="XX-migrating.html">
+            
+                <a href="XX-migrating.html">
+            
+                    
+                    迁移
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">通用</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../general/resources.html">
+            
+                <a href="../general/resources.html">
+            
+                    
+                    资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" >
+            
+                <a target="_blank" href="https://github.com/ianstormtaylor/slate/blob/master/Contributing.md">
+            
+                    
+                    贡献
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" >
+            
+                <a target="_blank" href="https://github.com/ianstormtaylor/slate/blob/master/Changelog.md">
+            
+                    
+                    更新日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../general/faq.html">
+            
+                <a href="../general/faq.html">
+            
+                    
+                    常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >编辑器</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x7F16;&#x8F91;&#x5668;">&#x7F16;&#x8F91;&#x5668;</h1>
+<p>Slate &#x7F16;&#x8F91;&#x5668;&#x6240;&#x6709;&#x7684;&#x884C;&#x4E3A;&#xFF0C;&#x5185;&#x5BB9;&#xFF0C;&#x548C;&#x72B6;&#x6001;&#x90FD;&#x4F1A;&#x6C47;&#x603B;&#x5230;&#x5230;&#x4E00;&#x4E2A;&#x9876;&#x7EA7;&#x7684; <code>Editor</code> &#x5BF9;&#x8C61;&#x4E2D;&#x3002;&#x5B83;&#x7684;&#x63A5;&#x53E3;&#x662F;&#x8FD9;&#x6837;&#x7684;&#xFF1A;</p>
+<pre><code class="lang-ts"><span class="hljs-keyword">interface</span> Editor {
+  children: Node[]
+  selection: Range | <span class="hljs-literal">null</span>
+  operations: Operation[]
+  marks: Record&lt;<span class="hljs-built_in">string</span>, <span class="hljs-built_in">any</span>&gt; | <span class="hljs-literal">null</span>
+  [key: <span class="hljs-built_in">string</span>]: <span class="hljs-built_in">any</span>
+
+  <span class="hljs-comment">// &#x81EA;&#x5B9A;&#x4E49;&#x6A21;&#x5F0F;&#xFF08;schema&#xFF09;&#x7684;&#x8282;&#x70B9;&#x884C;&#x4E3A;</span>
+  isInline: (element: Element) =&gt; <span class="hljs-built_in">boolean</span>
+  isVoid: (element: Element) =&gt; <span class="hljs-built_in">boolean</span>
+  normalizeNode: (entry: NodeEntry) =&gt; <span class="hljs-built_in">void</span>
+  onChange: () =&gt; <span class="hljs-built_in">void</span>
+
+  <span class="hljs-comment">// &#x53EF;&#x91CD;&#x5199;&#x7684;&#x6838;&#x5FC3;&#x884C;&#x4E3A;&#x3002;</span>
+  addMark: (key: <span class="hljs-built_in">string</span>, value: <span class="hljs-built_in">any</span>) =&gt; <span class="hljs-built_in">void</span>
+  apply: (operation: Operation) =&gt; <span class="hljs-built_in">void</span>
+  deleteBackward: (unit: <span class="hljs-string">&apos;character&apos;</span> | <span class="hljs-string">&apos;word&apos;</span> | <span class="hljs-string">&apos;line&apos;</span> | <span class="hljs-string">&apos;block&apos;</span>) =&gt; <span class="hljs-built_in">void</span>
+  deleteForward: (unit: <span class="hljs-string">&apos;character&apos;</span> | <span class="hljs-string">&apos;word&apos;</span> | <span class="hljs-string">&apos;line&apos;</span> | <span class="hljs-string">&apos;block&apos;</span>) =&gt; <span class="hljs-built_in">void</span>
+  deleteFragment: () =&gt; <span class="hljs-built_in">void</span>
+  insertBreak: () =&gt; <span class="hljs-built_in">void</span>
+  insertFragment: (fragment: Node[]) =&gt; <span class="hljs-built_in">void</span>
+  insertNode: (node: Node) =&gt; <span class="hljs-built_in">void</span>
+  insertText: (text: <span class="hljs-built_in">string</span>) =&gt; <span class="hljs-built_in">void</span>
+  removeMark: (key: <span class="hljs-built_in">string</span>) =&gt; <span class="hljs-built_in">void</span>
+}
+</code></pre>
+<p>&#x770B;&#x8D77;&#x6765;&#x6BD4;&#x5176;&#x4ED6;&#x63A5;&#x53E3;&#x8981;&#x7A0D;&#x5FAE;&#x590D;&#x6742;&#x4E00;&#x70B9;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x5305;&#x542B;&#x4E86;&#x6240;&#x6709;&#x4F60;&#x5B9A;&#x4E49;&#x7684;&#x9876;&#x7EA7;&#x51FD;&#x6570;&#x548C;&#x81EA;&#x5B9A;&#x4E49;&#x57DF;&#x7684;&#x64CD;&#x4F5C;&#x3002;</p>
+<p> <code>children</code> &#x5C5E;&#x6027;&#x5305;&#x542B;&#x4E86;&#x7EC4;&#x6210;&#x7F16;&#x8F91;&#x5668;&#x5185;&#x5BB9;&#x7684;&#x8282;&#x70B9;&#x7684;&#x6587;&#x6863;&#x6811;&#x3002;</p>
+<p>T<code>selection</code> &#x5C5E;&#x6027;&#x5305;&#x542B;&#x4E86;&#x7528;&#x6237;&#x5F53;&#x524D;&#x9009;&#x62E9;&#x7684;&#x6587;&#x6863;&#x7247;&#x6BB5;&#xFF08;&#x5982;&#x679C;&#x6709;&#x7684;&#x8BDD;&#xFF09;&#x3002;</p>
+<p><code>operations</code> &#x5C5E;&#x6027;&#x5305;&#x542B;&#x4E86;&#x6240;&#x6709;&#x81EA;&#x4E0A;&#x6B21;&#x66F4;&#x6539;&#x4EE5;&#x6765;&#x6240;&#x5E94;&#x7528;&#x7684;&#x64CD;&#x4F5C;&#x3002;&#xFF08;Slate &#x5728;&#x4E8B;&#x4EF6;&#x5FAA;&#x73AF;&#x4E24;&#x4E2A;tick&#x4E4B;&#x95F4;&#x7684;&#x5206;&#x6279;&#x64CD;&#x4F5C;&#xFF09;</p>
+<p><code>marks</code> &#x5C5E;&#x6027;&#x5B58;&#x50A8;&#x4E86;&#x5149;&#x6807;&#x9644;&#x5E26;&#x7684;&#x683C;&#x5F0F;&#xFF0C;&#x8BE5;&#x683C;&#x5F0F;&#x5C06;&#x5E94;&#x7528;&#x5230;&#x63D2;&#x5165;&#x7684;&#x6587;&#x672C;&#x4E0A;&#x3002;</p>
+<h2 id="&#x91CD;&#x5199;&#x884C;&#x4E3A;">&#x91CD;&#x5199;&#x884C;&#x4E3A;</h2>
+<p>&#x5728;&#x4E4B;&#x524D;&#x7684;&#x6307;&#x5357;&#x4E2D;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x6697;&#x793A;&#x4E86;&#x8FD9;&#x4E00;&#x70B9;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x91CD;&#x5199;&#x7F16;&#x8F91;&#x5668;&#x7684;&#x51FD;&#x6570;&#x5C5E;&#x6027;&#x6765;&#x91CD;&#x5199;&#x5B83;&#x7684;&#x4EFB;&#x4F55;&#x884C;&#x4E3A;&#x3002;</p>
+<p>&#x6BD4;&#x5982;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x60F3;&#x5B9A;&#x4E49;&#x94FE;&#x63A5;&#x5143;&#x7D20;&#x662F;&#x4E00;&#x4E2A;&#x884C;&#x5185;&#x5143;&#x7D20;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> { isInline } = editor
+
+editor.isInline = element =&gt; {
+  <span class="hljs-keyword">return</span> element.type === <span class="hljs-string">&apos;link&apos;</span> ? <span class="hljs-literal">true</span> : isInline(element)
+}
+</code></pre>
+<p>&#x6216;&#x8005;&#x4F60;&#x53EF;&#x80FD;&#x60F3;&#x8981;&#x91CD;&#x5199; <code>insertText</code> &#x884C;&#x4E3A;&#x6765;&#x201C;&#x94FE;&#x63A5;&#x201D;&#x5730;&#x5740;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> { insertText } = editor
+
+editor.insertText = text =&gt; {
+  <span class="hljs-keyword">if</span> (isUrl(text)) {
+    <span class="hljs-comment">// ...</span>
+    <span class="hljs-keyword">return</span>
+  }
+
+  insertText(text)
+}
+</code></pre>
+<p>&#x6216;&#x8005;&#x4F60;&#x751A;&#x81F3;&#x60F3;&#x8981;&#x81EA;&#x5B9A;&#x4E49;&#x201C;&#x89C4;&#x8303;&#x201D;&#xFF0C;&#x7528;&#x6765;&#x786E;&#x4FDD;&#x94FE;&#x63A5;&#x9075;&#x4ECE;&#x67D0;&#x4E9B;&#x7EA6;&#x675F;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> { normalizeNode } = editor
+
+editor.normalizeNode = entry =&gt; {
+  <span class="hljs-keyword">const</span> [node, path] = entry
+
+  <span class="hljs-keyword">if</span> (Element.isElement(node) &amp;&amp; node.type === <span class="hljs-string">&apos;link&apos;</span>) {
+    <span class="hljs-comment">// ...</span>
+    <span class="hljs-keyword">return</span>
+  }
+
+  normalizeNode(entry)
+}
+</code></pre>
+<p>&#x65E0;&#x8BBA;&#x4F60;&#x600E;&#x6837;&#x91CD;&#x5199;&#x884C;&#x4E3A;&#xFF0C;&#x786E;&#x4FDD;&#x8C03;&#x7528;&#x9ED8;&#x8BA4;&#x7684;&#x51FD;&#x6570;&#x4F5C;&#x4E3A;&#x540E;&#x5907;&#x884C;&#x4E3A;&#x3002;&#x9664;&#x975E;&#x4F60;&#x771F;&#x7684;&#x60F3;&#x8981;&#x5B8C;&#x5168;&#x79FB;&#x9664;&#x9ED8;&#x8BA4;&#x884C;&#x4E3A;&#x3002;&#xFF08;&#x8FD9;&#x4E0D;&#x662F;&#x4E00;&#x4E2A;&#x597D;&#x4E3B;&#x610F;&#xFF01;&#xFF09; </p>
+<h2 id="&#x8F85;&#x52A9;&#x51FD;&#x6570;">&#x8F85;&#x52A9;&#x51FD;&#x6570;</h2>
+<p><code>Editor</code> &#x63A5;&#x53E3;&#x548C;&#x6240;&#x6709;&#x7684; Slate &#x63A5;&#x53E3;&#x4E00;&#x6837;&#xFF0C;&#x66B4;&#x9732;&#x4E86;&#x4E00;&#x4E9B;&#x6709;&#x7528;&#x7684;&#x8F85;&#x52A9;&#x51FD;&#x6570;&#x7528;&#x6765;&#x5B9E;&#x73B0;&#x67D0;&#x4E9B;&#x884C;&#x4E3A;&#x3002;&#x6BD4;&#x5982;&#x8BF4;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// &#x83B7;&#x53D6;&#x8DEF;&#x5F84;&#x4E0A;&#x6307;&#x5B9A;&#x8282;&#x70B9;&#x7684;&#x8D77;&#x70B9;&#x3002;</span>
+<span class="hljs-keyword">const</span> point = Editor.start(editor, [<span class="hljs-number">0</span>, <span class="hljs-number">0</span>])
+
+<span class="hljs-comment">// &#x4ECE;&#x4E00;&#x4E2A;&#x9009;&#x62E9;&#x8303;&#x56F4;(range)&#x83B7;&#x53D6;&#x6587;&#x6863;&#x7247;&#x6BB5;&#x3002;</span>
+<span class="hljs-keyword">const</span> fragment = Editor.fragment(editor, range)
+</code></pre>
+<p>&#x8FD8;&#x6709;&#x4E00;&#x4E9B;&#x57FA;&#x4E8E;&#x8FED;&#x4EE3;&#x7684;&#x8F85;&#x52A9;&#x51FD;&#x6570;&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// &#x8FED;&#x4EE3;&#x9009;&#x62E9;&#x8303;&#x56F4;&#xFF08;range&#xFF09;&#x7684;&#x6BCF;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#x3002;</span>
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> [node, path] <span class="hljs-keyword">of</span> Editor.nodes(editor, { at: range })) {
+  <span class="hljs-comment">// ...</span>
+}
+
+<span class="hljs-comment">// &#x8FED;&#x4EE3;&#x5F53;&#x524D;&#x6587;&#x6863;&#x7247;&#x6BB5;&#xFF08;selection&#xFF09;&#x7684;&#x6587;&#x672C;&#x8282;&#x70B9;&#x7684;&#x6BCF;&#x4E00;&#x70B9;(point)&#x3002;</span>
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> [point] <span class="hljs-keyword">of</span> Editor.positions(editor)) {
+  <span class="hljs-comment">// ...</span>
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="05-operations.html" class="navigation navigation-prev " aria-label="Previous page: 操作">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="07-plugins.html" class="navigation navigation-next " aria-label="Next page: 插件">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"编辑器","level":"3.6","depth":1,"next":{"title":"插件","level":"3.7","depth":1,"path":"concepts/07-plugins.md","ref":"./concepts/07-plugins.md","articles":[]},"previous":{"title":"操作","level":"3.5","depth":1,"path":"concepts/05-operations.md","ref":"./concepts/05-operations.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","-search","-lunr"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":true,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"ga":{"configuration":"auto","token":"G-EWFCPBLMDL"},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"showLevel":false}},"headerTemplate":"__AUTHOR__","theme":"default","author":"Xheldon","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"footerTemplate":"_TITLE_","variables":{},"title":"Slate 中文","language":"zh-hans","links":{"sidebar":{"关于我":"https://github.com/Xheldon","项目地址":"https://github.com/Xheldon/slate-docs-cn/tree/master"}},"gitbook":"3.2.3"},"file":{"path":"concepts/06-editor.md","mtime":"2025-04-20T06:35:34.138Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-04-20T06:36:05.914Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
