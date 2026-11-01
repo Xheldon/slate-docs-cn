@@ -30,6 +30,9 @@ jobs:
       - name: Build Book
         run: gitbook build --gitbook=3.2.3
 
+      - name: Apply SEO tags, sitemap and robots
+        run: node scripts/apply-seo.js
+
       - name: Push
         working-directory: ./_book
         run: |

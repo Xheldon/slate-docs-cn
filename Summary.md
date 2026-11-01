@@ -1,5 +1,5 @@
-- [致谢](./README.MD)
 - [介绍](./Introduction.md)
+- [致谢](./thanks.md)
 
 ## 实战
 
