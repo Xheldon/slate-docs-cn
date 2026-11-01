@@ -4,6 +4,10 @@
     "output": "docs",
     "language": "zh-hans",
     "title": "Slate 中文",
+    "description": "Slate 中文文档：完全可定制的富文本编辑器框架，涵盖介绍、实战教程与核心概念（对应 v0.57.1）。",
+    "structure": {
+        "readme": "Introduction.md"
+    },
     "plugins": [
         "ga",
         "-search",
