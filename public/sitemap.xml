@@ -4,66 +4,66 @@
     <loc>https://slate.xheldon.com/</loc>
   </url>
   <url>
-    <loc>https://slate.xheldon.com/concepts/01-interfaces.html</loc>
+    <loc>https://slate.xheldon.com/concepts/01-interfaces</loc>
   </url>
   <url>
-    <loc>https://slate.xheldon.com/concepts/02-nodes.html</loc>
+    <loc>https://slate.xheldon.com/concepts/02-nodes</loc>
   </url>
   <url>
-    <loc>https://slate.xheldon.com/concepts/03-locations.html</loc>
+    <loc>https://slate.xheldon.com/concepts/03-locations</loc>
   </url>
   <url>
-    <loc>https://slate.xheldon.com/concepts/04-commands.html</loc>
+    <loc>https://slate.xheldon.com/concepts/04-commands</loc>
   </url>
   <url>
-    <loc>https://slate.xheldon.com/concepts/05-operations.html</loc>
+    <loc>https://slate.xheldon.com/concepts/05-operations</loc>
   </url>
   <url>
-    <loc>https://slate.xheldon.com/concepts/06-editor.html</loc>
+    <loc>https://slate.xheldon.com/concepts/06-editor</loc>
   </url>
   <url>
-    <loc>https://slate.xheldon.com/concepts/07-plugins.html</loc>
+    <loc>https://slate.xheldon.com/concepts/07-plugins</loc>
   </url>
   <url>
-    <loc>https://slate.xheldon.com/concepts/08-rendering.html</loc>
+    <loc>https://slate.xheldon.com/concepts/08-rendering</loc>
   </url>
   <url>
-    <loc>https://slate.xheldon.com/concepts/09-serializing.html</loc>
+    <loc>https://slate.xheldon.com/concepts/09-serializing</loc>
   </url>
   <url>
-    <loc>https://slate.xheldon.com/concepts/10-normalizing.html</loc>
+    <loc>https://slate.xheldon.com/concepts/10-normalizing</loc>
   </url>
   <url>
-    <loc>https://slate.xheldon.com/concepts/XX-migrating.html</loc>
+    <loc>https://slate.xheldon.com/concepts/XX-migrating</loc>
   </url>
   <url>
-    <loc>https://slate.xheldon.com/general/faq.html</loc>
+    <loc>https://slate.xheldon.com/general/faq</loc>
   </url>
   <url>
-    <loc>https://slate.xheldon.com/general/resources.html</loc>
+    <loc>https://slate.xheldon.com/general/resources</loc>
   </url>
   <url>
-    <loc>https://slate.xheldon.com/thanks.html</loc>
+    <loc>https://slate.xheldon.com/thanks</loc>
   </url>
   <url>
-    <loc>https://slate.xheldon.com/walkthroughs/01-installing-slate.html</loc>
+    <loc>https://slate.xheldon.com/walkthroughs/01-installing-slate</loc>
   </url>
   <url>
-    <loc>https://slate.xheldon.com/walkthroughs/02-adding-event-handlers.html</loc>
+    <loc>https://slate.xheldon.com/walkthroughs/02-adding-event-handlers</loc>
   </url>
   <url>
-    <loc>https://slate.xheldon.com/walkthroughs/03-defining-custom-elements.html</loc>
+    <loc>https://slate.xheldon.com/walkthroughs/03-defining-custom-elements</loc>
   </url>
   <url>
-    <loc>https://slate.xheldon.com/walkthroughs/04-applying-custom-formatting.html</loc>
+    <loc>https://slate.xheldon.com/walkthroughs/04-applying-custom-formatting</loc>
   </url>
   <url>
-    <loc>https://slate.xheldon.com/walkthroughs/05-executing-commands.html</loc>
+    <loc>https://slate.xheldon.com/walkthroughs/05-executing-commands</loc>
   </url>
   <url>
-    <loc>https://slate.xheldon.com/walkthroughs/06-saving-to-a-database.html</loc>
+    <loc>https://slate.xheldon.com/walkthroughs/06-saving-to-a-database</loc>
   </url>
   <url>
-    <loc>https://slate.xheldon.com/walkthroughs/XX-using-the-bundled-source.html</loc>
+    <loc>https://slate.xheldon.com/walkthroughs/XX-using-the-bundled-source</loc>
   </url>
 </urlset>

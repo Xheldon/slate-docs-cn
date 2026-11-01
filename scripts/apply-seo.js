@@ -2,6 +2,8 @@
 
 // 在 gitbook build 之后运行：给每个 HTML 补 description / 自指 canonical / OG，
 // 并写出站点根上的 sitemap.xml 与 robots.txt（同时同步到 public/）。
+// Cloudflare Pages 会把 /path.html 308 到 /path（首页 /index.html → /）。
+// canonical、og:url、sitemap 使用这个无扩展名的最终地址。
 
 var fs = require('fs');
 var path = require('path');
@@ -41,7 +43,8 @@ function relPosix(file) {
 
 function canonicalFor(rel) {
     if (rel === 'index.html') return ORIGIN + '/';
-    return ORIGIN + '/' + rel.split('/').map(encodeURIComponent).join('/');
+    var withoutExt = rel.replace(/\.html$/i, '');
+    return ORIGIN + '/' + withoutExt.split('/').map(encodeURIComponent).join('/');
 }
 
 function escapeAttr(value) {
